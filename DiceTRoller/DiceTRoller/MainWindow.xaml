@@ -1,0 +1,25 @@
+﻿<Window x:Class="DiceTRoller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiceTRoller"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="381">
+    <Grid>
+        <ComboBox x:Name="SavedCharacterComboBox" HorizontalAlignment="Left" Margin="190,10,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="LoadSavedCharLbl" Content="Load a saved character:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.543" Width="175" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="InputNewCharacterLbl" Content="Or are you inputting a new one?" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="180"/>
+        <RadioButton x:Name="NewCharacterRBtn" Content="New Character" HorizontalAlignment="Left" Margin="217,47,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="StrScoreTxtBx" HorizontalAlignment="Left" Margin="24,125,0,0" Text="Str" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="DexScoreTxtBx" HorizontalAlignment="Left" Margin="66,125,0,0" Text="Dex" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" RenderTransformOrigin="0.538,0.552" IsEnabled="False"/>
+        <TextBox x:Name="ConScoreTxtBx" HorizontalAlignment="Left" Margin="109,125,0,0" Text="Con" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="WisScoreTxtBx" HorizontalAlignment="Left" Margin="151,125,0,0" Text="Wis" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="IntScoreTxtBx" HorizontalAlignment="Left" Margin="193,125,0,0" Text="Int" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="ChaScoreTxtBx" HorizontalAlignment="Left" Margin="236,125,0,0" Text="Cha" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="AbilityScoreTxtBx" HorizontalAlignment="Left" Margin="280,125,0,0" Text="Ability Score" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="22" IsEnabled="False"/>
+        <TextBox x:Name="CharacterNameTxtBx" HorizontalAlignment="Left" Margin="23,89,0,0" Text="Character Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="22" IsEnabled="False"/>
+
+
+    </Grid>
+</Window>
