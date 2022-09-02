@@ -10,7 +10,7 @@
         <ComboBox x:Name="SavedCharacterComboBox" HorizontalAlignment="Left" Margin="190,10,0,0" VerticalAlignment="Top" Width="181"/>
         <Label x:Name="LoadSavedCharLbl" Content="Load a saved character:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.543" Width="175" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
         <Label x:Name="InputNewCharacterLbl" Content="Or are you inputting a new one?" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="180"/>
-        <RadioButton x:Name="NewCharacterRBtn" Content="New Character" HorizontalAlignment="Left" Margin="217,47,0,0" VerticalAlignment="Top" ToolTip="Check this to save a new character. Cannot be checked if an old character is loaded. Please note that the currently loaded character's information will be removed from the UI when this is clicked."/>
+        <RadioButton x:Name="NewCharacterRBtn" Content="New Character" HorizontalAlignment="Left" Margin="217,47,0,0" VerticalAlignment="Top" ToolTip="Check this to save a new character. Cannot be checked if an old character is loaded. Please note that the currently loaded character's information will be removed from the UI when this is clicked." Checked="NewCharacterRBtn_Checked"/>
         <TextBox x:Name="StrScoreTxtBx" HorizontalAlignment="Left" Margin="24,125,0,0" Text="Str" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False" ToolTip="Character's strength score"/>
         <TextBox x:Name="DexScoreTxtBx" HorizontalAlignment="Left" Margin="66,125,0,0" Text="Dex" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" RenderTransformOrigin="0.538,0.552" IsEnabled="False" ToolTip="Character's dexterity score"/>
         <TextBox x:Name="ConScoreTxtBx" HorizontalAlignment="Left" Margin="109,125,0,0" Text="Con" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False" ToolTip="Character's constitution score"/>
@@ -19,10 +19,11 @@
         <TextBox x:Name="ChaScoreTxtBx" HorizontalAlignment="Left" Margin="236,125,0,0" Text="Cha" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="22" IsEnabled="False" ToolTip="Character's charisma score"/>
         <TextBox x:Name="ProfModTxtBx" HorizontalAlignment="Left" Margin="280,125,0,0" Text="Proficiency" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="22" IsEnabled="False" ToolTip="Character's proficiency modifier score"/>
         <TextBox x:Name="CharacterNameTxtBx" HorizontalAlignment="Left" Margin="23,89,0,0" Text="Character Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="22" IsEnabled="False" ToolTip="What's your character's name?"/>
-        <Button x:Name="SaveNewBtn" Content="Save New" HorizontalAlignment="Left" Margin="280,162,0,0" VerticalAlignment="Top" Width="76" ToolTip="Save a new character with the information entered"/>
-        <Button x:Name="EditSavedBtn" Content="Edit Saved" HorizontalAlignment="Left" Margin="23,162,0,0" VerticalAlignment="Top" Width="75" ToolTip="Edit the currently loaded Saved Character"/>
-        <ComboBox x:Name="CharacterLvlComboBx" HorizontalAlignment="Left" Margin="318,89,0,0" VerticalAlignment="Top" Width="38" ToolTip="What level is your character?"/>
+        <Button x:Name="SaveNewBtn" Content="Save New" HorizontalAlignment="Left" Margin="280,162,0,0" VerticalAlignment="Top" Width="76" ToolTip="Save a new character with the information entered" Click="SaveNewBtn_Click" IsEnabled="False"/>
+        <Button x:Name="EditSavedBtn" Content="Edit Saved" HorizontalAlignment="Left" Margin="23,162,0,0" VerticalAlignment="Top" Width="77" ToolTip="Edit the currently loaded Saved Character" Click="EditSavedBtn_Click" IsEnabled="False"/>
+        <ComboBox x:Name="CharacterLvlComboBx" HorizontalAlignment="Left" Margin="318,89,0,0" VerticalAlignment="Top" Width="38" ToolTip="What level is your character?" IsEnabled="False"/>
         <Label x:Name="LevelLbl" Content="Level" HorizontalAlignment="Left" Margin="265,87,0,0" VerticalAlignment="Top" Width="39" AutomationProperties.Name=""/>
+        <Button x:Name="DeleteBtn" Content="Delete Saved" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Width="76" ToolTip="WARNING: This deletes the saved character data" Click="DeleteBtn_Click"/>
 
 
     </Grid>
